@@ -1,0 +1,8 @@
+<section class="padding pt-[186px] max-container">
+  <h1 class="title text-center">Lorem Ipsum Dollar</h1>
+  <div class="grid grid-cols-7 justify-items-stretch items-center gap-5">
+    @for (image of images; track $index) {
+      <img [ngSrc]="image" alt="spons" width="250" height="64" [ngClass]="$index === 7 ? 'col-span-2 mx-auto' : 'mx-auto'"/>
+    }
+  </div>
+</section>

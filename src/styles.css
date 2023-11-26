@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.cdnfonts.com/css/coolvetica");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-blue text-white;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .button {
+    padding: 18px 52px;
+    @apply bg-orange rounded-full;
+  }
+
+  .title {
+    color: rgba(255, 255, 255, 0.90) ;
+    @apply font-coolvetica text-[40px];
+  }
+
+  .input {
+    @apply pl-5 text-base leading-normal border outline-none sm:flex-1 max-sm:w-full text-slate-gray max-sm:p-5 sm:border-none max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply px-8 py-12 sm:px-16 sm:py-24;
+  }
+
+  .padding-x {
+    @apply px-8 sm:px-16;
+  }
+
+  .padding-y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding-t {
+    @apply pt-12 sm:pt-24;
+  }
+
+  .padding-b {
+    @apply pb-12 sm:pb-24;
+  }
+
+  .info-text {
+    @apply text-lg leading-7 font-montserrat text-slate-gray;
+  }
+}

@@ -1,0 +1,8 @@
+<section class="pt-[168px] max-container">
+  <h1 class="title text-center">Upcoming Events</h1>
+  <div class="flex items-center gap-14 font-inter justify-between overflow-x-auto scrollbar-hide pt-24">
+    @for (event of events; track $index) {
+      <app-event-card [event]="event"></app-event-card>
+    }
+  </div>
+</section>

@@ -1,0 +1,12 @@
+.img-container {
+  border-radius: 172px 172px 0px 0px;
+  border: 1px solid #fff;
+  background: rgba(1, 130, 170, 0.1);
+}
+
+.info-container {
+  border-radius: 0px 0px 20px 20px;
+  border: 5px solid #ff7000;
+  background: #06071b;
+  padding: 20px 30px 22px 21px;
+}

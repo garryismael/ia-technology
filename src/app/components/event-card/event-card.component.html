@@ -1,0 +1,15 @@
+<div>
+  <div class="img-container">
+    <img [ngSrc]="event.image" [alt]="event.text" width="324" height="324" class="py-6"/>
+  </div>
+  <div class="info-container flex items-start gap-5">
+    <div>
+      <h1 class="text-orange text-xs font-bold">{{event.month}}</h1>
+      <p class="font-bold text-3xl">{{event.day}}</p>
+    </div>
+    <div>
+      <h1 class="text-base font-bold leading-[150%] mb-2">{{event.title}}</h1>
+      <p class="text-[#DFDDDD] text-sm leading-[150%]">{{event.text}}</p>
+    </div>
+  </div>
+</div>
